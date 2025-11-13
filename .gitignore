@@ -1,5 +1,6 @@
 *.class
 PFMS/target/
+PFMS/src/main/java/com/poultryfarm/database/*
 *.log
 .idea/
 .vscode/
