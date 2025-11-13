@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="866.0" style="-fx-background-color: #FFF7E9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane fx:id="sideBar" prefHeight="492.0" prefWidth="214.0" style="-fx-background-color: #0A041C; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane layoutX="24.0" layoutY="72.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #FFA800; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Dashboard" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/dashboard.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane id="Livestock" layoutX="24.0" layoutY="123.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #0A041C; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Livestock" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/chicken.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane layoutX="24.0" layoutY="174.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #0A041C; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Produits" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/leg.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane layoutX="24.0" layoutY="224.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #0A041C; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Clientes" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/user.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane layoutX="24.0" layoutY="274.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #0A041C; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Personals" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/businessman.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane layoutX="24.0" layoutY="324.0" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #0A041C; -fx-background-radius: 8;">
+                    <children>
+                        <Label layoutX="47.0" layoutY="8.0" prefHeight="17.0" prefWidth="89.0" text="Rapports" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/report.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+            <Text fill="WHITE" layoutX="56.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poultry Farm Management" />
+            <Text fill="WHITE" layoutX="98.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérez votre ferme">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="1.0" />
+            </opaqueInsets>
+        </AnchorPane>
+    </children>
+</AnchorPane>
