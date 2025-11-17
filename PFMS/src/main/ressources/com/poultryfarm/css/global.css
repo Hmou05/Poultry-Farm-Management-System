@@ -1,0 +1,355 @@
+.sidebar-moduls {
+    -fx-background-color: #0A041C;
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+}
+
+.sidebar-moduls:hover {
+    -fx-border-color: white;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.action-containers {
+    -fx-display: flex;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-padding: 16;
+
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+.action-containers:hover {
+    -fx-border-color: #0A041C;
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+    -fx-cursor: hand;
+}
+
+.containers:hover {
+    -fx-border-color: #0A041C;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.column-table {
+    -fx-background-color: white;
+    -fx-border-bottom: black;
+    -fx-border-top: black;
+    -fx-border-bottom-color: black;
+}
+
+/* Enhanced Table Styling for Livestock */
+/* .table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 0;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 1 0 0;
+    -fx-text-fill: #333333;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 15;
+}
+
+.table-view .column-header:last-child {
+    -fx-border-width: 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #333333;
+    -fx-font-weight: 600;
+}
+
+.table-view .table-cell {
+    -fx-padding: 12 15;
+    -fx-border-color: #f0f0f0;
+    -fx-border-width: 0 0 1 0;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #fafafa;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: white;
+}
+
+.table-view .table-row-cell:filled:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-cursor: hand;
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #fff3e0;
+    -fx-text-fill: #333333;
+}
+ */
+/* Button Styling */
+.button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.button:armed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+/* Export CSV Button */
+.button:first-child {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.button:first-child:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Add Animal Group Button */
+.button:last-child {
+    -fx-background-color: #FFA800;
+    -fx-text-fill: white;
+}
+
+.button:last-child:hover {
+    -fx-background-color: #e69500;
+}
+
+/* Health status styling */
+.health-good {
+    -fx-text-fill: #4CAF50;
+    -fx-font-weight: 600;
+}
+
+.health-warning {
+    -fx-text-fill: #FF9800;
+    -fx-font-weight: 600;
+}
+
+.health-critical {
+    -fx-text-fill: #F44336;
+    -fx-font-weight: 600;
+}
+
+/* Action button in table */
+.action-icon {
+    -fx-text-fill: #666666;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 5;
+}
+
+.action-icon:hover {
+    -fx-text-fill: #FFA800;
+    -fx-background-color: #fff3e0;
+    -fx-background-radius: 4;
+}
+
+/* Search field styling */
+.text-field {
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+    -fx-background-color: white;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFA800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 168, 0, 0.2), 5, 0, 0, 0);
+}
+
+/* Scroll bar styling */
+.table-view .scroll-bar:horizontal,
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 5;
+}
+
+.table-view .scroll-bar:horizontal .thumb:hover,
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #a0a0a0;
+}
+
+/* Search field styling */
+.text-field {
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+    -fx-background-color: white;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFA800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 168, 0, 0.3), 5, 0, 0, 0);
+}
+
+/* Health status colors */
+.health-good {
+    -fx-text-fill: #4CAF50;
+    -fx-font-weight: bold;
+}
+
+.health-warning {
+    -fx-text-fill: #FF9800;
+    -fx-font-weight: bold;
+}
+
+.health-critical {
+    -fx-text-fill: #F44336;
+    -fx-font-weight: bold;
+}
+
+/* Action buttons styling */
+.action-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Popup Overlay Styling */
+.popup-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-container {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0, 0, 0);
+    -fx-padding: 30;
+}
+
+/* Form Field Styling */
+.form-field {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10 12;
+    -fx-font-size: 14px;
+}
+
+.form-field:focused {
+    -fx-border-color: #FFA800;
+    -fx-effect: dropshadow(gaussian, rgba(255, 168, 0, 0.2), 5, 0, 0, 0);
+}
+
+/* ComboBox Styling */
+.combo-box {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: white;
+    -fx-padding: 8 12;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+/* Spinner Styling */
+.spinner {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 8 12;
+}
+
+/* Button Styling for Popup */
+.popup-button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+}
+
+.popup-button-cancel {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: white;
+}
+
+.popup-button-cancel:hover {
+    -fx-background-color: #5a6268;
+}
+
+.popup-button-confirm {
+    -fx-background-color: #FFA800;
+    -fx-text-fill: white;
+}
+
+.popup-button-confirm:hover {
+    -fx-background-color: #e69500;
+}
+
+/* Blur effect class */
+.blur-background {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
