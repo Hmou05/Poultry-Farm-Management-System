@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1640.0" style="-fx-background-color: #FFF7E9;" stylesheets="@../css/global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Sidebar avec Header Fixe et Navigation Défilable -->
+        <VBox fx:id="sidebar" prefHeight="634.0" prefWidth="222.0" style="-fx-background-color: #0A041C; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <!-- Header Fixe de la Sidebar -->
+                <VBox prefHeight="80.0" style="-fx-background-color: #0A041C; -fx-background-radius: 0 10 0 0;">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/logo.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="20.0" top="20.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Poultry Farm Management" translateX="50.0" translateY="-30.0">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin></Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérez votre ferme" translateX="75.0" translateY="-28.0">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                        </Text>
+                    </children>
+                </VBox>
+
+                <!-- Navigation Défilable -->
+                <ScrollPane fx:id="sidebarScroll" fitToWidth="true" prefHeight="545.0" prefWidth="189.0" style="-fx-background: #0A041C; -fx-border-color: #0A041C; -fx-background-radius: 0 0 10 0; -fx-border-radius: 0 0 10 0;" VBox.vgrow="ALWAYS">
+                    <content>
+                        <VBox spacing="0" style="-fx-background-color: #0A041C;">
+                            <children>
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="110.0" text="Tableau De Bord" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/tableau-de-bord.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #FFA800; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Livestock" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/livestock.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Produits" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/produits.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Clients" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/clientes.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Personnel" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/personnel.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Ventes" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/ventes.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Finances" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/finances.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Inventaire" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/inventaire.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+
+                                <AnchorPane prefHeight="35.0" style="-fx-background-color: #0A041C; -fx-background-radius: 10;" styleClass="sidebar-moduls">
+                                    <children>
+                                        <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="Rapports" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/rapports.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+
+        <!-- Contenu Principal Flexible -->
+        <VBox fx:id="mainContent" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <!-- Header Fixe avec Bouton Ajouter à droite -->
+                <VBox style="-fx-background-color: #FFF7E9; -fx-padding: 30 30 20 30;">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                            <!-- Left side: Title and sidebar toggle button -->
+                            <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                                <!-- Sidebar Toggle Button -->
+                                <Button fx:id="sidebarToggleButton" mnemonicParsing="false" onAction="#toggleSidebar" style="-fx-background-color: #FFA800; -fx-background-radius: 50%; -fx-border-radius: 50%; -fx-min-width: 40px; -fx-min-height: 40px; -fx-max-width: 40px; -fx-max-height: 40px; -fx-padding: 0;" styleClass="sidebar-toggle-button">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white; -fx-font-weight: bold;" text="‹">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                    </graphic>
+                                </Button>
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Gestion du Bétail" HBox.hgrow="ALWAYS" />
+                            </HBox>
+                            <!-- Add Button on the right side -->
+                            <Button fx:id="addButton" mnemonicParsing="false" styleClass="add-button" text="+ Ajouter">
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                        </HBox>
+                        <Label style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Gérez vos animaux et leurs informations." />
+                    </children>
+                </VBox>
+
+                <!-- Contenu Défilable et Flexible -->
+                <ScrollPane fitToWidth="true" style="-fx-background: #FFF7E9; -fx-border-color: #FFF7E9;" VBox.vgrow="ALWAYS">
+                    <content>
+                        <VBox spacing="20" style="-fx-background-color: #FFF7E9; -fx-padding: 0 30 30 30;">
+
+                            <!-- Statistiques Animaux Section -->
+                            <VBox spacing="20.0">
+                                <HBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 0 10 0 0;">
+                                    <VBox spacing="10" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);" styleClass="containers" HBox.hgrow="ALWAYS">
+                                        <VBox spacing="5">
+                                            <Label style="-fx-font-size: 12px; -fx-text-fill: #666666;" text="Total Animaux" />
+                                            <Label fx:id="totalAnimalsLabel" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFA800;" text="0" />
+                                            <Label style="-fx-font-size: 11px; -fx-text-fill: #4CAF50;" text="+00% depuis le mois dernier" />
+                                        </VBox>
+                                    </VBox>
+
+                                    <VBox spacing="10" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);" styleClass="containers" HBox.hgrow="ALWAYS">
+                                        <VBox spacing="5">
+                                            <Label style="-fx-font-size: 12px; -fx-text-fill: #666666;" text="En Bonne Santé" />
+                                            <Label fx:id="healthyAnimalsLabel" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFA800;" text="0" />
+                                            <Label style="-fx-font-size: 11px; -fx-text-fill: #4CAF50;" text="Tous les groupes sont sains" />
+                                        </VBox>
+                                    </VBox>
+
+                                    <VBox spacing="10" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);" styleClass="containers" HBox.hgrow="ALWAYS">
+                                        <VBox spacing="5">
+                                            <Label style="-fx-font-size: 12px; -fx-text-fill: #666666;" text="Sous Traitement" />
+                                            <Label fx:id="treatmentAnimalsLabel" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFA800;" text="0" />
+                                            <Label style="-fx-font-size: 11px; -fx-text-fill: #666666;" text="Aucun problème signalé" />
+                                        </VBox>
+                                    </VBox>
+
+                                    <VBox spacing="10" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);" styleClass="containers" HBox.hgrow="ALWAYS">
+                                        <VBox spacing="5">
+                                            <Label style="-fx-font-size: 12px; -fx-text-fill: #666666;" text="Vaccinations dues" />
+                                            <Label fx:id="vaccinationsDueLabel" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFA800;" text="0" />
+                                            <Label style="-fx-font-size: 11px; -fx-text-fill: #4CAF50;" text="Tous à jour" />
+                                        </VBox>
+                                    </VBox>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                                </HBox>
+                            </VBox>
+
+                            <!-- Tableau des Lots d'Animaux -->
+                            <VBox spacing="15" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2); -fx-padding: 20;" styleClass="containers" VBox.vgrow="ALWAYS">
+                                <!-- Header with title and export button -->
+                                <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Lots d'Animaux" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="exportCsvButton" mnemonicParsing="false" style="-fx-background-color: #4CAF50; -fx-background-radius: 8; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 15; -fx-font-size: 13px;" text="Exporter CSV">
+                                        <cursor>
+                                            <Cursor fx:constant="HAND" />
+                                        </cursor>
+                                    </Button>
+                                </HBox>
+
+                                <!-- Search field in its own HBox -->
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <TextField fx:id="searchField" maxHeight="25.0" promptText="Rechercher par ID, race..." styleClass="label" HBox.hgrow="ALWAYS" />
+                                </HBox>
+
+                                <!-- Table -->
+                                <TableView fx:id="livestockTable" style="-fx-background-color: transparent; -fx-border-color: #e0e0e0; -fx-border-width: 1 0 1 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-margin: 15 0 0 0;" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="batchIdColumn" prefWidth="120.0" text="ID du Lot" />
+                                        <TableColumn fx:id="breedColumn" prefWidth="150.0" text="Race" />
+                                        <TableColumn fx:id="quantityColumn" prefWidth="100.0" text="Quantité" />
+                                        <TableColumn fx:id="ageColumn" prefWidth="100.0" text="Âge" />
+                                        <TableColumn fx:id="healthColumn" prefWidth="120.0" text="Santé" />
+                                        <TableColumn fx:id="locationColumn" prefWidth="120.0" text="Emplacement" />
+                                        <TableColumn fx:id="purposeColumn" prefWidth="120.0" text="But" />
+                                        <TableColumn fx:id="actionsColumn" prefWidth="100.0" text="Actions" />
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </VBox>
+
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

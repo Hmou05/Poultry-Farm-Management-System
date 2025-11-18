@@ -73,7 +73,7 @@
 
                         <!-- Footer -->
                         <VBox styleClass="login-footer">
-                            <Label styleClass="footer-text" text="© 2024 Poultry Farm Management. Tous droits réservés." />
+                            <Label styleClass="footer-text" text="© 2025 Poultry Farm Management. Tous droits réservés." />
                         </VBox>
                     </children>
                 </VBox>
